@@ -12,7 +12,7 @@ export default function Footer() {
             <img
               src="/logo.png"
               alt="White Avenue"
-              className="h-7 md:h-8 w-auto brightness-0 invert"
+              className="h-[34px] md:h-10 w-auto brightness-0 invert"
             />
             <p className="text-white/60 text-sm leading-relaxed max-w-xs">
               Odontología de calidad a precios accesibles. Especialistas en Ortodoncia con atención premium en Nogales y Hermosillo.

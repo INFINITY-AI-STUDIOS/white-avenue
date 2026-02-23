@@ -32,7 +32,7 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt="White Avenue"
-            className={`h-7 md:h-8 w-auto transition-all ${isScrolled ? 'brightness-100' : 'brightness-0 invert'}`}
+            className={`h-[34px] md:h-10 w-auto transition-all ${isScrolled ? 'brightness-100' : 'brightness-0 invert'}`}
           />
         </a>
 
