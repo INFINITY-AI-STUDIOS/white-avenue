@@ -5,7 +5,7 @@ Sitio web de **White Avenue Dental Clinic**, clínica de ortodoncia y odontolog�
 React + Vite + Tailwind. Es una web estática: funciona en cualquier hosting.
 
 - **Instalarlo en un hosting:** ver [INSTALACION.md](INSTALACION.md).
-- **Generar el sitio listo para subir:** `npm run build` y sube el contenido de `dist/`.
+- **Descargar el sitio listo para subir:** [white-avenue-sitio.zip](https://github.com/INFINITY-AI-STUDIOS/white-avenue/releases/latest/download/white-avenue-sitio.zip).
 
 ```bash
 npm install

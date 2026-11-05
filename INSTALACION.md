@@ -28,7 +28,7 @@ Si ya tienes otro hosting con cPanel (GoDaddy, SiteGround, Banahosting, etc.), t
 
 Tiempo: unos 10 minutos.
 
-1. **Ten a mano el sitio listo.** Es el archivo `white-avenue-sitio.zip` que se entrega con esta guía (también puede estar en la sección *Releases* del repositorio). Si no lo tienes, genéralo con `npm run build` (sección 5) y comprime el contenido de la carpeta `dist`.
+1. **Descarga el sitio listo:** [white-avenue-sitio.zip](https://github.com/INFINITY-AI-STUDIOS/white-avenue/releases/latest/download/white-avenue-sitio.zip). Si haces cambios al código, genera uno nuevo con `npm run build` (sección 5) y comprime el contenido de la carpeta `dist`.
 2. **Entra a tu hosting.** En Hostinger: hPanel → **Sitios web** → tu dominio → **Administrador de archivos**. En cPanel: **Administrador de archivos**.
 3. **Abre la carpeta `public_html`.** Si tiene archivos de una web anterior (por ejemplo `default.php` o un WordPress), respáldalos o bórralos.
 4. **Sube el ZIP** a `public_html` con el botón **Subir**.
