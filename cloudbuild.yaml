@@ -1,24 +1,10 @@
+# Compila la imagen y la publica en Artifact Registry. El despliegue se hace aparte:
+#   gcloud run deploy white-avenue --image=<imagen> --region=us-central1
+substitutions:
+  _IMAGE: us-central1-docker.pkg.dev/$PROJECT_ID/infinity/white-avenue
 steps:
-  # Build the container image
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/white-avenue', '.']
-  # Push the container image to Container Registry
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/$PROJECT_ID/white-avenue']
-  # Deploy container image to Cloud Run
-  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    entrypoint: gcloud
-    args:
-      - 'run'
-      - 'deploy'
-      - 'white-avenue'
-      - '--image'
-      - 'gcr.io/$PROJECT_ID/white-avenue'
-      - '--region'
-      - 'us-central1'
-      - '--platform'
-      - 'managed'
-      - '--allow-unauthenticated'
-
+  - name: gcr.io/cloud-builders/docker
+    args: ['build', '-t', '${_IMAGE}:$SHORT_SHA', '-t', '${_IMAGE}:latest', '.']
 images:
-  - 'gcr.io/$PROJECT_ID/white-avenue'
+  - '${_IMAGE}:$SHORT_SHA'
+  - '${_IMAGE}:latest'

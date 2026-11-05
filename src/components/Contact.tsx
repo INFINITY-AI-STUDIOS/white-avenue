@@ -4,9 +4,18 @@ import { SiWhatsapp } from '@icons-pack/react-simple-icons';
 import React from 'react';
 
 export default function Contact() {
-  const handleSubmit = (e: React.FormEvent) => {
+  // El formulario abre WhatsApp de la clínica con el mensaje ya escrito (no necesita servidor).
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert('¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.');
+    const f = new FormData(e.currentTarget);
+    const texto = [
+      'Hola, quiero agendar una cita en White Avenue.',
+      `Nombre: ${f.get('nombre')}`,
+      `Teléfono: ${f.get('telefono')}`,
+      `Email: ${f.get('email')}`,
+      `Mensaje: ${f.get('mensaje')}`,
+    ].join('\n');
+    window.open(`https://wa.me/526312499203?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
   };
 
   return (
@@ -69,6 +78,7 @@ export default function Contact() {
                   <input
                     required
                     type="text"
+                    name="nombre"
                     className="w-full bg-surface/30 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary outline-none transition-all"
                     placeholder="Tu nombre completo"
                   />
@@ -78,6 +88,7 @@ export default function Contact() {
                   <input
                     required
                     type="tel"
+                    name="telefono"
                     className="w-full bg-surface/30 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary outline-none transition-all"
                     placeholder="631 000 0000"
                   />
@@ -88,6 +99,7 @@ export default function Contact() {
                 <input
                   required
                   type="email"
+                    name="email"
                   className="w-full bg-surface/30 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary outline-none transition-all"
                   placeholder="tu@email.com"
                 />
@@ -95,6 +107,7 @@ export default function Contact() {
               <div className="space-y-2">
                 <label className="text-xs font-bold uppercase tracking-wider text-text-muted">Mensaje</label>
                 <textarea
+                  name="mensaje"
                   required
                   rows={4}
                   className="w-full bg-surface/30 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary outline-none transition-all resize-none"
@@ -103,7 +116,7 @@ export default function Contact() {
               </div>
               <button type="submit" className="btn-primary w-full flex items-center justify-center gap-2 py-4">
                 <Send size={20} />
-                Enviar Mensaje
+                Enviar por WhatsApp
               </button>
             </form>
           </motion.div>
