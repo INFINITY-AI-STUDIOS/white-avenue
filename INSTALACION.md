@@ -2,6 +2,8 @@
 
 Sitio web de **White Avenue Dental Clinic** (Nogales, Sonora). Es una web estática: no usa base de datos ni servidor propio, así que funciona en cualquier hosting.
 
+> **¿Prefieres que lo hagamos por ti?** Ofrecemos instalación y soporte personalizados. Mira la sección 7, al final de esta guía.
+
 El formulario de contacto abre WhatsApp de la clínica con el mensaje ya escrito. Para cambiar el número, edita `src/components/` (busca `526312499203`) y vuelve a compilar.
 
 ---
@@ -118,6 +120,24 @@ Después de cambiar algo: `npm run build` y sube el contenido de `dist/` (opció
 | Página en blanco | Los archivos quedaron dentro de una subcarpeta. Mueve todo el contenido a `public_html` |
 | «No seguro» en el navegador | Activa el SSL (paso 7 de la opción A) y espera unos minutos |
 | El dominio no abre | Revisa los nameservers o el registro A; puede tardar hasta 24 horas |
+
+---
+
+## 7. Atención personalizada y soporte
+
+Si no quieres hacer la instalación por tu cuenta, te acompañamos en todo el proceso. Este servicio tiene un costo, según lo que necesites:
+
+- **Instalación completa:** compra del hosting, conexión del dominio, certificado SSL y correos con el dominio de la clínica.
+- **Publicación automática:** dejar el sitio conectado al repositorio para que cada cambio se publique solo.
+- **Cambios en el sitio:** textos, fotos, servicios, promociones y testimonios.
+- **Soporte y mantenimiento:** revisiones, respaldos y atención cuando algo falle.
+- **Mejoras:** perfil de Google Maps, formulario que llegue al correo, agenda de citas en línea y más.
+
+Escríbenos, cuéntanos qué necesitas y te enviamos una propuesta a la medida:
+
+- **WhatsApp:** [+57 310 817 9028](https://wa.me/573108179028)
+- **Correo:** [hello@soyandressalamanca.com](mailto:hello@soyandressalamanca.com)
+- **Web:** [soyandressalamanca.com](https://soyandressalamanca.com)
 
 ---
 
