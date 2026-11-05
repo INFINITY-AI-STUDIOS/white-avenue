@@ -8,7 +8,7 @@ El formulario de contacto abre WhatsApp de la clínica con el mensaje ya escrito
 
 ## 1. Hosting recomendado: Hostinger
 
-Para esta web recomendamos **Hostinger, plan Premium Web Hosting** (o superior):
+Para esta web recomendamos **Hostinger, plan Premium Web Hosting**:
 
 - Alcanza de sobra para un sitio como este.
 - Incluye certificado SSL gratis (el candado de `https://`).
@@ -16,7 +16,7 @@ Para esta web recomendamos **Hostinger, plan Premium Web Hosting** (o superior):
 - El primer año suele incluir el dominio gratis.
 - Tiene panel en español y soporte 24/7 por chat.
 
-👉 **Contratar Hostinger:** [ENLACE_HOSTINGER](ENLACE_HOSTINGER)
+👉 **[Contratar Hostinger Premium](https://www.hostinger.com/cart?product=hosting%3Ahostinger_premium&period=12&referral_type=cart_link&REFERRALCODE=1ANDRES548&referral_id=01a1ad03-074c-72af-a2d4-6f3318b482fa)**
 
 > Enlace de referido: si contratas por aquí, quien te recomienda recibe una comisión de Hostinger. A ti no te cuesta nada extra.
 
